@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+// setting
+
+#mobile {
+    width: 100%;
+    // max-width: 1200px;
+    height: 72px;
+    position: fixed;
+    z-index: 20;
+    right: 10px;
+    top: 0;
+    @media (max-width:768px){
+        right: 0;
+        // top: -2px;
+    }
+    .toggle{
+        display: none;
+        width: 30px;
+        height: 30px;
+        padding: 25px 20px;
+        color: #FFF;
+        font-weight: bold;
+        text-align: center;
+        @media (max-width:768px){
+            display: block;
+            float: right;
+        }
+    }
+    .wrap {
+        width: 500px;
+        height: 80px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: transparent;
+        display: block;
+        @media (max-width:768px){
+            width: 100%;
+            height: auto;
+            right: auto;
+            top: 100%;
+            left: 0;
+            display: none;
+            background: rgba(255,255,255,.9);
+            padding-bottom: 20px;
+        }
+        li {
+            height: 80px;
+            display: inline-block;
+            margin-right: -10px;
+            @media (max-width:768px){
+                display: block;
+                height: 60px;
+                margin-right: 0;
+            }
+            a {
+                height: 80px;
+                display: block;
+                padding: 10px;
+                font-size: 14px;
+                line-height: 60px;
+                height: 20px;
+                color: #000;
+                text-align: center;
+                @media (max-width:768px){
+                    font-size: 16px;
+                    line-height: 32px; 
+                }
+                .icon{
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    background-image: url(../img/menu_icon.svg);
+                    background-repeat: no-repeat;
+                    background-size: 20px auto;
+                    margin-right: 5px;
+                    &.icon1{ background-position: 0 0;}
+                    &.icon2{ background-position: 0 -20px;}
+                    &.icon3{ background-position: 0 -40px;}
+                    &.icon4{ background-position: 0 -60px;}
+                    &.icon5{ background-position: 0 -80px;}
+                    &.icon6{ background-position: 0 -100px;}
+                    &.icon7{ background-position: 0 -120px;}
+                    &.icon8{ background-position: 0 -140px;}
+                    &.icon9{ background-position: 0 -160px;}
+                    &.icon10{ background-position: 0 -180px;}
+                    @media (max-width:768px){
+                        width: 25px;
+                        height: 25px;
+                        background-size: 25px auto;
+                        margin-right: 10px;
+                        &.icon1{ background-position: 0 0;}
+                        &.icon2{ background-position: 0 -25px;}
+                        &.icon3{ background-position: 0 -50px;}
+                        &.icon4{ background-position: 0 -75px;}
+                        &.icon5{ background-position: 0 -100px;}
+                        &.icon6{ background-position: 0 -125px;}
+                        &.icon7{ background-position: 0 -150px;}
+                        &.icon8{ background-position: 0 -175px;}
+                        &.icon9{ background-position: 0 -200px;}
+                        &.icon10{ background-position: 0 -225px;}  
+                    }                      
+                }
+            }
+        }
+    }
+}
+header{
+    width: 100%;
+    max-width: 1920px;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 10;
+    .logo{
+        .logo__img{ 
+            font-size: 1em;
+            img{
+                width: auto;
+                height: 40px;
+                margin: 15px;
+            }
+        }
+    }
+
+}
+h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+}
+
+.section{
+    text-align:center;
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.section, .slider{
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/kv_bg_lg.jpg);
+    background-position: top center;
+    @media (max-width:960px) {
+        background-image: url(../img/kv_bg.jpg);
+    }
+    .container{
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        padding: 100px 120px;
+		top: 50%;
+		transform: translateY(-50%);
+        position: relative;
+        box-sizing: border-box;
+        @media (max-width:960px) {
+            width: 100%;
+            max-width: auto;
+            padding: 0 10%;
+        }
+        @media (max-width:768px) {
+            width: 100%;
+            max-width: auto;
+            padding: 0 5%;
+        }
+        @media (max-width:640px) {
+            width: 100%;
+            max-width: auto;
+            padding: 0 2%;
+        }
+    }
+}
+#section0{
+    h1{ 
+        width: calc(600/1100*100%);
+        margin: 0 auto;
+        padding-top: 50px;
+        margin-bottom: 150px;
+        @media (max-width:960px) {
+            width: calc(600/920*100%);
+            margin-bottom: 15%;
+        }
+    }
+    .txt2{ 
+        width: calc(600/1100*100%);
+        margin: 0 auto;
+        margin-bottom: 50px;
+        @media (max-width:960px) {
+            width: calc(600/920*100%);
+            margin-bottom: 50%;
+        }
+    }
+    .txt3{ 
+        width: calc(520/1100*100%);
+        margin: 0 auto;
+        margin-bottom: 10px;
+        @media (max-width:960px) {
+            width: calc(520/920*100%);
+            margin-bottom: 3%;
+        }
+    }
+    .txt4{ 
+        width: calc(445/1100*100%);
+        margin: 0 auto;
+        @media (max-width:960px) {
+            width: calc(445/920*100%);
+        }
+    }
+    img{ width: 100%;}
+}
+.slide{
+    overflow: hidden;
+    .top{ 
+        padding-top: 50px;
+        h2{ 
+            width: calc(320/1100*100%);
+            margin: 0 auto;
+            @media (max-width:960px) {
+                width: calc(415/1100*100%);
+            }
+            img{ width: 100%;}
+        }
+        hr{ 
+            width: calc(640/1100*100%);
+            margin: 0 auto;
+            background-color: #8e7200;
+            margin: 10px auto;
+            @media (max-width:960px) {
+                width: calc(640/920*100%);
+            }
+        }
+        .txtBox{
+            width: calc(640/1100*100%);
+            margin: 0 auto;
+            @media (max-width:960px) {
+                width: calc(640/920*100%);
+            }
+            img{ width: 100%;}
+         }
+    }
+    .imgBox{ 
+        width: calc(640/1100*100%);
+        margin: 10px auto 0;
+        @media (max-width:960px) {
+            width: calc(640/920*100%);
+        }
+        img{ width: 100%;}
+    }
+}
+#section1{
+    .txtBox{
+        height: 0;
+        padding-bottom: 38%;
+    }
+}
+#section9{
+    .mapBox{        
+        width: 100%;
+        height: 300px;   
+        padding-top: 50px;
+        display: block;
+        overflow: hidden;  
+    }
+    .btnBox{
+        height: auto;
+        overflow: hidden;
+        .btn{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background-color: #8b8000;
+            float: left;
+            margin-top: 10px;
+            border-radius: 10px;
+            visibility: visible !important;
+            a{ width: 100%; display: block; color: #fff;}
+        }
+    }
+}
+@media (max-width:960px) {
+    .fp-controlArrow.fp-prev{
+        left: 10px;
+        border-width: 20px 20px 20px 0;
+        border-color: transparent #fff transparent transparent;
+    }
+    .fp-controlArrow.fp-next {
+        right: 10px;
+        border-width: 20px 0 20px 20px;
+        border-color: transparent transparent transparent #fff;
+    }
+}
